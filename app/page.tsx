@@ -2,10 +2,10 @@ import WhatsAppForm from "@/components/WhatsAppForm";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { getServerSession } from "next-auth";
-import { authOptions } from "./api/auth/[...nextauth]/route";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import TitleApp from "@/components/TitleApp";
+import { authOptions } from "./api/auth/options";
 
 export const dynamic = "force-dynamic";
 

@@ -1,9 +1,9 @@
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import HistoryClient from "@/components/HistoryClient";
+import { authOptions } from "../api/auth/options";
 
 export const dynamic = "force-dynamic";
 
